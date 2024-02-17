@@ -1,0 +1,189 @@
+body {
+    font-family: Helvetica;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.headerContent {
+    flex: 1;
+    padding: 4vw;
+}
+
+.header h1 {
+    font-size: 6em;
+    line-height: 1em;
+    margin: 0;
+}
+
+.header h3 {
+    margin: 0;
+    font-size: 1.3em;
+}
+
+.header h2 {
+    color: #ff9301;
+    font-size: 2em;
+    margin: 0;
+}
+
+ul {
+    margin-top: 4vw;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 1.3em;
+    margin-top: 2em;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    display: inline;
+}
+
+ul li a:hover {
+    color: #ff9301;
+}
+
+#headerImage {
+    background-color: rgba(255, 147, 1, 0.5);
+    float: right;
+    width: 20vw;
+    
+    padding-bottom: 0;
+    padding-top: 10%;
+    padding-left: 20%;
+    padding-right: 4vw;
+    border-bottom-left-radius: 40%;
+    border-top-left-radius: 40%;
+}
+/*gray Section - Biography, WID, Awards*/
+
+.graySection {
+    background-color: #f7f7ff;
+    padding: 4vw;
+}
+.whiteSection {
+    padding: 4vw;
+}
+.flexContainer {
+    display: flex;
+    justify-content: flex-start; 
+   
+    height: 100%;
+    padding: 15px;
+    gap: 5px;
+
+  }
+
+  .flexItem1 {
+text-align: center;
+line-height: 1;
+  }
+  .flexItem2 {
+    padding: 1em;
+  }
+  
+  #circleImage {
+    background-color: #ff9301;
+    border-radius: 50%;
+    width: 120px;
+    height: auto;
+  }
+  /*divider*/
+  hr.solid {
+    border-top: 3px solid #bbb;
+  }
+
+/*Flexbox cards*/
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+  
+  .card {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    
+  }
+  
+  .card img {
+    height: auto;
+    width: 10%;
+    padding: 5%;
+    background-color: #ff9301;
+    border-bottom-right-radius: 50%; 
+    border-bottom-left-radius: 30%;
+  }
+  
+  .cardContent {
+    padding: 20px;
+   
+  }
+  
+ /*Formulář*/
+
+ 
+
+
+
+
+/*Footer */
+footer {
+    background-color: #eeeeee;  
+}
+
+
+
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #headerImage {
+        display: none;
+    }
+
+    .headerContent {
+        margin-top: 2em;
+    }
+
+    ul li {
+        display: block;
+        margin: 1em 0;
+    }
+
+    ul li a {
+        display: block;
+        margin: 1em 0;
+        background: ff9301;
+    }
+
+    .flex-container {
+        display: block;
+    }
+    .cardContainer {
+        display: block;
+    }
+    
+    
+}
